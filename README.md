@@ -26,6 +26,7 @@ A responsive, interactive UI built using React.js, replicating Intercom’s AI-e
 
 live link:--
  Vercel: https://beyond-chats-admin-panel-ui-fn16.vercel.app/
+ img: ![Screenshot (52)](https://github.com/user-attachments/assets/4edd2d86-3f79-472f-866d-8773edf83652)
 
 
 🧪 Usage:---
