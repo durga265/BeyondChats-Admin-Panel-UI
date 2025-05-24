@@ -1,0 +1,75 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #181826;
+  color: #eee;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0; 
+}
+
+.conversation-list,
+.content-container > :first-child {
+  width: 300px;
+  min-width: 250px;
+  max-width: 350px;
+  background-color: #1e1e2f;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+  min-height: 0; 
+}
+
+
+.chat-window,
+.empty-state,
+.content-container > :nth-child(2) {
+  flex: 1 1 auto;
+  background-color: #22223a;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-height: 0; 
+}
+
+
+.empty-state {
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    height: 100vh; 
+  }
+
+  .conversation-list,
+  .content-container > :first-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: auto !important;
+    height: 30vh; 
+    border-right: none;
+    border-bottom: 1px solid #333;
+    overflow-y: auto;
+  }
+
+  .chat-window,
+  .empty-state,
+  .content-container > :nth-child(2) {
+    width: 100%;
+    height: 70vh; 
+    flex-grow: 1;
+    min-height: 0;
+    overflow-y: auto;
+  }
+}

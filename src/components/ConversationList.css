@@ -1,0 +1,78 @@
+.conversation-list {
+  width: 320px;
+  border-right: 1px solid #333;
+  background: #1f1f30;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.conversation-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #2a2a42;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+  outline: none;
+}
+
+.conversation-item.selected,
+.conversation-item:hover {
+  background-color: #29294a;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 14px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.conversation-item.selected .avatar {
+  border-color: #00bfff;
+}
+
+.conv-info {
+  flex: 1;
+}
+
+.conv-info strong {
+  display: block;
+  color: #cce6ff;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.conv-info p {
+  color: #aaa;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.unread-badge {
+  background-color: #00bfff;
+  color: #121212;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 14px;
+  min-width: 22px;
+  text-align: center;
+  user-select: none;
+}
